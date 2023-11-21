@@ -7,36 +7,25 @@
     <style>
         body {
             /* Add background picture and styling */
-            background-image: url('https://github.com/BravoN11/BravoN11.github.io/blob/a6405f4b2c24bb1cd6c617e3cd435d0ea3d2b7dc/Mthood.jpg');
-            background-size: cover; 
-            background-repeat: no-repeat; 
+            background-image: url('https://github.com/BravoN11/BravoN11.github.io/blob/a6405f4b2c24bb1cd6c617e3cd435d0ea3d2b7dc/Mthood.jpg?raw=true');
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: center; 
-            color: #333; 
         }
-
-        /* auto sizing the images */
-        .resized-image {
-            max-width: 25%; 
-            height: auto; 
-        }
-
         /* Additional styling for better readability */
-        h1, h2, h3, h4 {
-            color: #fff; /* Set the text color to white for better contrast on the background image */
+        h1, h2, h3, h4, p {
+            color: #fff /* Set the text color to white for better contrast on the background image */
         }
-
-        li {
-            list-style-type: none; /* Remove default list styling */
+        .image-container {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a {
+            color: #fff; /* Make the link color white instead of blue */
         }
     </style>
 </head>
-<!-- <style>
-    /* auto sizing the images */
-    .resized-image {
-      max-width: 25%; 
-      height: auto; 
-    }
-  </style> -->
+
 <body>
     <!-- Two Paragraphs about me -->
     <h1>About Me</h1>
@@ -57,10 +46,15 @@
     <li><a href="http://www.marketwatch.com">Market Watch for investing</a></li><br /><br />
     
     <!-- Add pictures -->
-    <img style="width:200px" src="https://github.com/BravoN11/BravoN11.github.io/blob/main/IMG_3076.jpg?raw=true" class="resized-image">
-    <h3> The Family</h3>
-    <img style="width:200px" src="https://github.com/BravoN11/BravoN11.github.io/blob/main/IMG_3536.jpg?raw=true" class="resized-image">
-    <h4> Best Dog Ever</h4>
+    <div class="image-container">
+        <img style="width:200px" src="https://github.com/BravoN11/BravoN11.github.io/blob/main/IMG_3076.jpg?raw=true" class="resized-image">
+        <h3>The Family</h3>
+    </div>
+    
+    <div class="image-container">
+        <img style="width:200px" src="https://github.com/BravoN11/BravoN11.github.io/blob/main/IMG_3536.jpg?raw=true" class="resized-image">
+        <h4>Best Dog Ever</h4>
+    </div>
 
 </body>
 </html>
